@@ -1,0 +1,23 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+    
+    <h1>Iniciar sesión</h1>
+    <form onsubmit="processForm(event)">
+      <ion-list lines="full" class="ion-no-margin ion-no-padding">
+        <ion-item>
+          <ion-label position="stacked">Cedula<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+        </ion-item>
+
+      </ion-list>
+  
+      <div class="ion-padding">
+        <ion-button [routerLink]="['/home']" expand="block" type="submit" class="ion-no-margin">Iniciar sesión</ion-button>
+      </div>
+    </form>
+
+    <div class="registrar">No tengo una cuenta <label [routerLink]="['/registrarse']">Registrarse</label></div>
+</ion-content>

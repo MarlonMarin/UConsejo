@@ -1,0 +1,49 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+  <div class="iniciar"><label [routerLink]="['/iniciar']">Iniciar sesión</label></div>
+  <h1>Registrarse</h1>
+  <form onsubmit="processForm(event)">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label position="stacked">Nombre<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Cedula <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Edad<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Dirección<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Teléfono<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Correo<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <div class="ion-padding">
+      <ion-button [routerLink]="['/home']" expand="block" type="submit" class="ion-no-margin">Registrar</ion-button>
+    </div>
+  </form>
+</ion-content>
